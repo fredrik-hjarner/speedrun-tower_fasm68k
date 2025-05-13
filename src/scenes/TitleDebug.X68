@@ -136,17 +136,17 @@
 
 	; title text
 	dc.l	TitleScreenTextLine00
-	dc.w	FONT_BASE_TILE_LOW+%0110000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0110000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$001A0000+$0A800000 ; initial drawing location
 
 	; footer
 	dc.l	TitleScreenTextFooterDebug
-	dc.w	FONT_BASE_TILE_LOW+%0110000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0110000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$001A0000+$0B000000 ; initial drawing location
 
 	; title text
 	dc.l	TitleScreenTextLine01
-	dc.w	FONT_BASE_TILE_LOW+%0110000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0110000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$001A0000+$0B800000 ; initial drawing location
 
 	;---------------------------------------------------------------------------

@@ -330,197 +330,197 @@
 
 	; floors visited caption
 	dc.l	MenuScreenFloorsVisitedCaption
-	dc.w	FONT_BASE_TILE_LOW+%0010000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0010000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00040000+$01000000 ; initial drawing location
 
 	; events complete caption
 	dc.l	MenuScreenEventsCompleteCaption
-	dc.w	FONT_BASE_TILE_LOW+%0010000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0010000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002C0000+$01000000 ; initial drawing location
 
 	; unseen - floor 00
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00060000+$01800000 ; initial drawing location
 
 	; unseen - floor 01
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00060000+$02000000 ; initial drawing location
 
 	; unseen - floor 02
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00060000+$02800000 ; initial drawing location
 
 	; unseen - floor 03
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00060000+$03000000 ; initial drawing location
 
 	; unseen - floor 04
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00060000+$03800000 ; initial drawing location
 
 	; unseen - floor 05
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00060000+$04000000 ; initial drawing location
 
 	; unseen - floor 06
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00060000+$04800000 ; initial drawing location
 
 	; unseen - floor 07
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00060000+$05000000 ; initial drawing location
 
 	; unseen - floor 08
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00060000+$05800000 ; initial drawing location
 
 	; unseen - floor 09
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00060000+$06000000 ; initial drawing location
 
 	; unseen - floor 0A
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00060000+$06800000 ; initial drawing location
 
 	; unseen - floor 0B
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00060000+$07000000 ; initial drawing location
 
 	; unseen - floor 0C
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00060000+$07800000 ; initial drawing location
 
 	; unseen - floor 0D
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00060000+$08000000 ; initial drawing location
 
 	; unseen - floor 0E
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00060000+$08800000 ; initial drawing location
 
 	; unseen - floor 0F
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00060000+$09000000 ; initial drawing location
 
 	; unseen - event 00
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$01800000 ; initial drawing location
 
 	; unseen - event 01
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$02000000 ; initial drawing location
 
 	; unseen - event 02
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$02800000 ; initial drawing location
 
 	; unseen - event 03
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$03000000 ; initial drawing location
 
 	; unseen - event 04
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$03800000 ; initial drawing location
 
 	; unseen - event 05
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$04000000 ; initial drawing location
 
 	; unseen - event 06
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$04800000 ; initial drawing location
 
 	; unseen - event 07
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$05000000 ; initial drawing location
 
 	; unseen - event 08
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$05800000 ; initial drawing location
 
 	; unseen - event 09
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$06000000 ; initial drawing location
 
 	; unseen - event 0A
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$06800000 ; initial drawing location
 
 	; unseen - event 0B
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$07000000 ; initial drawing location
 
 	; unseen - event 0C
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$07800000 ; initial drawing location
 
 	; unseen - event 0D
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$08000000 ; initial drawing location
 
 	; unseen - event 0E
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$08800000 ; initial drawing location
 
 	; unseen - event 0F
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$09000000 ; initial drawing location
 
 	; unseen - event 10
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$09800000 ; initial drawing location
 
 	; unseen - event 11
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$0A000000 ; initial drawing location
 
 	; unseen - event 12
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$0A800000 ; initial drawing location
 
 	; unseen - event 13
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$0B000000 ; initial drawing location
 
 	; unseen - event 14
 	dc.l	MenuScreenUnseen
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$002E0000+$0B800000 ; initial drawing location
 
 	;---------------------------------------------------------------------------

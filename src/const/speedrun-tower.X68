@@ -85,7 +85,7 @@ TITLE_SCREEN_SELECTOR_Y=$0118 ; y-position for selector (sprite zero)
 ;-------------------------------------------------------------------------------
 ; status menu settings
 ;-------------------------------------------------------------------------------
-STATUS_MENU_CHECKED_PATTERN=%0110000000001111 ; needs to change if tiles are added
+STATUS_MENU_CHECKED_PATTERN=0110000000001111b ; needs to change if tiles are added
 STATUS_MENU_MAX_FLOORS=$10 ; needs to change if floors are added
 STATUS_MENU_MAX_STORY_EVENTS=$18 ; needs to change if story events are added
 STATUS_MENU_MAX_DIALOG_EVENTS=$25 ; needs to change if dialog events are added

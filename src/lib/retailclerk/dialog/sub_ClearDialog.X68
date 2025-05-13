@@ -20,7 +20,7 @@ ClearDialogDefault:
 	; clear out the dialog
 	movea.l	#PatternDialogFull,a0	; point a0 to start of dialog patterns
 ClearDialogDrawTileset:
-	move.w	#DIALOG_BASE_TILE+%0110000000000000,d0	; base pattern
+	move.w	#DIALOG_BASE_TILE+0110000000000000b,d0	; base pattern
 	moveq	#$0000,d1	; repeat
 	movea.l	#(VDP_VRAM_WRITE_A+DIALOG_ROWCOL),a1	; initial drawing location
 	bsr.w	DrawTileset		; branch to DrawTileset subroutine
@@ -36,7 +36,7 @@ ExitClearDialog:
 ClearDialogTextArea:
 	; clear out the dialog text
 	lea PatternDialogClearTextArea,a0	; point a0 to pattern for clear text
-	move.w	#DIALOG_BASE_TILE+%0110000000000000,d0	; base pattern
+	move.w	#DIALOG_BASE_TILE+0110000000000000b,d0	; base pattern
 	moveq	#$0000,d1	; repeat
 	lea	VDP_VRAM_WRITE_A,a1	; initial drawing location
 	adda.l	#DIALOG_TEXT_AREA_ROWCOL,a1	; move to row & column

@@ -33,115 +33,115 @@
 	dc.w	$001B ; text count
 
 	dc.l	LegalScreenLine00
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$00000000 ; initial drawing location
 
 	dc.l	LegalScreenLine01
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$00800000 ; initial drawing location
 
 	dc.l	LegalScreenLine02
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$01000000 ; initial drawing location
 
 	dc.l	LegalScreenLine03
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$01800000 ; initial drawing location
 
 	dc.l	LegalScreenLine04
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$02000000 ; initial drawing location
 
 	dc.l	LegalScreenLine05
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$02800000 ; initial drawing location
 
 	dc.l	LegalScreenLine06
-	dc.w	FONT_BASE_TILE_LOW+%0010000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0010000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$03000000 ; initial drawing location
 
 	dc.l	LegalScreenLine07
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$03800000 ; initial drawing location
 
 	dc.l	LegalScreenLine08
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$04000000 ; initial drawing location
 
 	dc.l	LegalScreenLine09
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$04800000 ; initial drawing location
 
 	dc.l	LegalScreenLine10
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$05000000 ; initial drawing location
 
 	dc.l	LegalScreenLine11
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$05800000 ; initial drawing location
 
 	dc.l	LegalScreenLine12
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$06000000 ; initial drawing location
 
 	dc.l	LegalScreenLine13
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$06800000 ; initial drawing location
 
 	dc.l	LegalScreenLine14
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$07000000 ; initial drawing location
 
 	dc.l	LegalScreenLine15
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$07800000 ; initial drawing location
 
 	dc.l	LegalScreenLine16
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$08000000 ; initial drawing location
 
 	dc.l	LegalScreenLine17
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$08800000 ; initial drawing location
 
 	dc.l	LegalScreenLine18
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$09000000 ; initial drawing location
 
 	dc.l	LegalScreenLine19
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$09800000 ; initial drawing location
 
 	dc.l	LegalScreenLine1A
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$0A000000 ; initial drawing location
 
 	dc.l	LegalScreenLine1B
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$0A800000 ; initial drawing location
 
 	dc.l	LegalScreenLine1C
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$0B000000 ; initial drawing location
 
 	dc.l	LegalScreenLine1D
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$0B800000 ; initial drawing location
 
 	dc.l	LegalScreenLine1E
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$0C000000 ; initial drawing location
 
 	dc.l	LegalScreenLine1F
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$0C800000 ; initial drawing location
 
 	dc.l	LegalScreenLine20
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$0D000000 ; initial drawing location
 
 	dc.l	LegalScreenLine21
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00000000+$0D800000 ; initial drawing location
 
 	;---------------------------------------------------------------------------

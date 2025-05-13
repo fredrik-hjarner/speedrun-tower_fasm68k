@@ -126,11 +126,11 @@ STRUCT_SPRITEDEF_X=$6
 ;-------------------------------------------------------------------------------
 ; directions
 ;-------------------------------------------------------------------------------
-DIRECTION_DOWN=%0000 ; 0
-DIRECTION_UP=%0001 ; 1
-DIRECTION_LEFT=%0010 ; 2
-DIRECTION_RIGHT=%0011 ; 3
-DIRECTION_NULL=%1111 ; used for movement patterns
+DIRECTION_DOWN=0000b ; 0
+DIRECTION_UP=0001b ; 1
+DIRECTION_LEFT=0010b ; 2
+DIRECTION_RIGHT=0011b ; 3
+DIRECTION_NULL=1111b ; used for movement patterns
 ;
 ;-------------------------------------------------------------------------------
 ; sprite settings
@@ -248,9 +248,9 @@ NPC3_SPRITE_VDP_Y=NPC2_SPRITE_VDP_Y+$00080000 ; npc3 sprite y vdp
 ;-------------------------------------------------------------------------------
 ; status screen settings
 ;-------------------------------------------------------------------------------
-STATUS_SCREEN_MAP_ICON_BASE_PATTERN=%1000000000001111
-STATUS_SCREEN_MAP_ICON_STORY_EVENT_BASE_PATTERN=%1000000000010001
-STATUS_SCREEN_MAP_ICON_OPTIONAL_EVENT_PATTERN=%1000000000010000
+STATUS_SCREEN_MAP_ICON_BASE_PATTERN=1000000000001111b
+STATUS_SCREEN_MAP_ICON_STORY_EVENT_BASE_PATTERN=1000000000010001b
+STATUS_SCREEN_MAP_ICON_OPTIONAL_EVENT_PATTERN=1000000000010000b
 STATUS_SCREEN_OBJECTIVE_VDP=VDP_VRAM_WRITE_B+$00020000+$02000000
 STATUS_SCREEN_INVENTORY_VDP=VDP_VRAM_WRITE_B+$00040000+$0B000000
 STATUS_SCREEN_INVENTORY_DESCRIPTION_VDP=VDP_VRAM_WRITE_B+$002A0000+$0A000000

@@ -1,4 +1,35 @@
 ;*******************************************************************************
+; First enable some fasm68k compatibility settings
+;*******************************************************************************
+
+	m68k.enable compat_vasm_add_bug1
+	m68k.enable compat_vasm_add_bug2
+	m68k.enable compat_vasm_add_bug3
+
+	m68k.enable compat_vasm_and_bug1
+
+	m68k.enable compat_vasm_sub_bug1
+	m68k.enable compat_vasm_sub_bug2
+
+	m68k.enable compat_vasm_or_bug1
+
+	m68k.enable compat_vasm_cmp_bug1
+
+	m68k.enable compat_vasm_org
+	; TODO: Maybe I can remove compat_vasm_org_label from the code?
+	;       I might have thought that this was needed but maybe it's not.
+	;       I mean remove `compat_vasm_org_label` from the codebase entirely.
+	; m68k.enable compat_vasm_org_label
+	m68k.enable compat_vasm_align
+	m68k.enable compat_colonless_labels
+	m68k.enable compat_binary_percent_prefix
+	m68k.enable compat_operators
+
+; I assume _DEBUG_ and _ATGAMES_HACKS_ are supposed to comes from command line?
+_DEBUG_=0
+_ATGAMES_HACKS_=0
+
+;*******************************************************************************
 ; Main code file for Speedrun Tower
 ;*******************************************************************************
 
@@ -252,4 +283,4 @@ BGM_End:
 RomEnd:
 	ORG ROM_ADDR_END
 	dc.b	%11111111
-    end 0
+    ; end 0 ; TTODO: What is this?

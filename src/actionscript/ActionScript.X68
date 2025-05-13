@@ -864,5 +864,5 @@ Show4ChoiceDialog:
 ;*******************************************************************************
 ; default text for interact events
 ;*******************************************************************************
-	include	'lib/retailclerk/event/sub_ShowDefaultText.X68'
+	include	'../lib/retailclerk/event/sub_ShowDefaultText.X68'
 

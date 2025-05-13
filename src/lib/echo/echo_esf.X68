@@ -96,14 +96,14 @@ ESF_PAN_LR:     equ $C0     ; Both speakers
 ; param instrument ... drum instrument ID ($00 to $FF)
 ;****************************************************************************
 
-ESF_NoteOn macro
-    dc.b    $00+(\1)
-    if      (\1)<ESF_PSG1
-    dc.b    (\2)*32+(\3)*2+1
-    elseif  (\1)<ESF_PSG4
-    dc.b    (\2)*24+(\3)*2
+macro ESF_NoteOn a,b,c
+    dc.b    $00+(a)
+    if      (a)<ESF_PSG1
+    dc.b    (b)*32+(c)*2+1
+    elseif  (a)<ESF_PSG4
+    dc.b    (b)*24+(c)*2
     else
-    dc.b    \2
+    dc.b    b
     endc
     endm
 
@@ -117,8 +117,8 @@ ESF_NoteOn macro
 ; param channel ...... channel to stop
 ;****************************************************************************
 
-ESF_NoteOff macro
-    dc.b    $10+(\1)
+macro ESF_NoteOff a
+    dc.b    $10+(a)
     endm
 
 ;****************************************************************************
@@ -132,9 +132,9 @@ ESF_NoteOff macro
 ; param volume .... new volume ($00 to $7F for FM, $00 to $0F for PSG)
 ;****************************************************************************
 
-ESF_SetVol macro
-    dc.b    $20+(\1)
-    dc.b    (\2)
+macro ESF_SetVol a,b
+    dc.b    $20+(a)
+    dc.b    (b)
     endm
 
 ;****************************************************************************
@@ -154,16 +154,16 @@ ESF_SetVol macro
 ; param type ........ noise type ($00 to $07)
 ;****************************************************************************
 
-ESF_SetFreq macro
-    dc.b    $30+(\1)
-    if      (\1)<ESF_PSG1
-    dc.b    ((\2)<<3)|((\3)>>8)
-    dc.b    (\3)&$FF
-    elseif  (\1)<ESF_PSG4
-    dc.b    (\2)&$0F
-    dc.b    (\2)>>6
+macro ESF_SetFreq a,b,c
+    dc.b    $30+(a)
+    if      (a)<ESF_PSG1
+    dc.b    ((b)<<3)|((c)>>8)
+    dc.b    (c)&$FF
+    elseif  (a)<ESF_PSG4
+    dc.b    (b)&$0F
+    dc.b    (b)>>6
     else
-    dc.b    (\2)
+    dc.b    (b)
     endc
     endm
 
@@ -178,9 +178,9 @@ ESF_SetFreq macro
 ; param instrument ... Instrument ID ($00 to $FF)
 ;****************************************************************************
 
-ESF_SetInstr macro
-    dc.b    $40+(\1)
-    dc.b    (\2)
+macro ESF_SetInstr a,b
+    dc.b    $40+(a)
+    dc.b    (b)
     endm
 
 ;****************************************************************************
@@ -193,8 +193,8 @@ ESF_SetInstr macro
 ; param channel ... Channel to lock
 ;****************************************************************************
 
-ESF_Lock macro
-    dc.b    $E0+(\1)
+macro ESF_Lock a
+    dc.b    $E0+(a)
     endm
 
 ;****************************************************************************
@@ -208,9 +208,9 @@ ESF_Lock macro
 ; param panning ... panning (see ESF_PAN_*)
 ;****************************************************************************
 
-ESF_SetPan macro
-    dc.b    $F0+(\1)
-    dc.b    (\2)
+macro ESF_SetPan a,b
+    dc.b    $F0+(a)
+    dc.b    (b)
     endm
 
 ;****************************************************************************
@@ -225,10 +225,10 @@ ESF_SetPan macro
 ; param value ...... value to write
 ;****************************************************************************
 
-ESF_SetFMReg macro
-    dc.b    $F8+(\1)
-    dc.b    (\2)
-    dc.b    (\3)
+macro ESF_SetFMReg a,b,c
+    dc.b    $F8+(a)
+    dc.b    (b)
+    dc.b    (c)
     endm
 
 ;****************************************************************************
@@ -241,13 +241,13 @@ ESF_SetFMReg macro
 ; param ticks ... Ticks to wait (60 = 1 second)
 ;****************************************************************************
 
-ESF_Delay macro
-    if      (\1)>0
-    if      (\1)<=$10
-    dc.b    $D0-1+(\1)
+macro ESF_Delay a
+    if      (a)>0
+    if      (a)<=$10
+    dc.b    $D0-1+(a)
     else
     dc.b    $FE
-    dc.b    (\1)&$FF
+    dc.b    (a)&$FF
     endc
     endc
     endm
@@ -257,6 +257,6 @@ ESF_Delay macro
 ; Stop event.
 ;****************************************************************************
 
-ESF_Stop macro
+macro ESF_Stop
     dc.b    $FF
     endm
