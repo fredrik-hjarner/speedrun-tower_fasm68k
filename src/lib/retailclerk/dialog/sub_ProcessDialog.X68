@@ -16,7 +16,7 @@ ProcessDialogTestOpening:
 	move.w	d7,d6	; copy low word with frame number
 	mulu.w	#DIALOG_PATTERN_SIZE,d6	; multiply by size of dialog patterns
 	adda.l	d6,a0	; increment to current frame
-	move.w	#DIALOG_BASE_TILE+%0110000000000000,d0	; base pattern
+	move.w	#DIALOG_BASE_TILE+0110000000000000b,d0	; base pattern
 	moveq	#$0000,d1	; repeat
 	lea	VDP_VRAM_WRITE_A,a1	; initial drawing location
 	adda.l	#DIALOG_ROWCOL,a1	; move to row & column
@@ -49,7 +49,7 @@ TestNPCNameEnd:
 	beq.s	TitleEnd	; end of name, branch to setup text
 	; update d6 to point to the tile ID
 	sub.w	#$20,d6	; subtract 32 to get the character index
-	add.w	#FONT_BASE_TILE+%0110000000000000,d6	; add the base tile
+	add.w	#FONT_BASE_TILE+0110000000000000b,d6	; add the base tile
 	move.l	(MEM_DIALOG_VDP),(VDP_CONTROL)	; set VDP address
 	move.w  d6,(VDP_DATA)	; copy the character to VPD
 	; draw the next character
@@ -152,7 +152,7 @@ TestLF:
 .1
 	; update d6 to point to the tile ID
 	sub.w	#$20,d6	; subtract 32 to get the character index
-	add.w	#FONT_BASE_TILE+%0110000000000000,d6	; add the base tile
+	add.w	#FONT_BASE_TILE+0110000000000000b,d6	; add the base tile
 	move.l	(MEM_DIALOG_VDP),(VDP_CONTROL)	; set VDP address
 	move.w  d6,(VDP_DATA)	; copy the character to VPD
 	; draw the next character
@@ -306,7 +306,7 @@ ProcessDialogTestClosing:
 	lea	PatternDialogClear,a0	; point a0 to start of dialog patterns
 .2
 	adda.l	d6,a0	; decrement to current frame
-	move.w	#DIALOG_BASE_TILE+%0110000000000000,d0	; base pattern
+	move.w	#DIALOG_BASE_TILE+0110000000000000b,d0	; base pattern
 	moveq	#$0000,d1	; repeat
 	lea	VDP_VRAM_WRITE_A,a1	; initial drawing location
 	adda.l	#DIALOG_ROWCOL,a1	; move to row & column

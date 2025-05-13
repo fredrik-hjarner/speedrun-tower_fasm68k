@@ -312,11 +312,11 @@
 	dc.w	$0001 ; text count
 
 	dc.l	SceneTextFloor09
-	dc.w	FONT_BASE_TILE+%0000000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE+0000000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00380000+$01800000 ; initial drawing location
 
 	dc.l	SceneTextFloor09
-	dc.w	FONT_BASE_TILE+%0000000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE+0000000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00140000+$01800000 ; initial drawing location
 
 	;---------------------------------------------------------------------------

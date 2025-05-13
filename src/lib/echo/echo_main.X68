@@ -31,11 +31,12 @@
 ; Requests the Z80 bus
 ;****************************************************************************
 
-Echo_Z80Request macro
+macro Echo_Z80Request
+    local @Echo_WaitZ80
     move.w  #$100, ($A11100)        ; Request Z80 bus
-@Echo_WaitZ80\@:
+@Echo_WaitZ80:
     btst.b  #0, ($A11100)           ; Did we get it yet?
-    bne.s   @Echo_WaitZ80\@         ; Keep waiting
+    bne.s   @Echo_WaitZ80           ; Keep waiting
     endm                            ; End of macro
 
 ;****************************************************************************
@@ -43,7 +44,7 @@ Echo_Z80Request macro
 ; Releases the Z80 bus
 ;****************************************************************************
 
-Echo_Z80Release macro
+macro Echo_Z80Release
     move.w  #$000, ($A11100)        ; Release Z80 bus
     endm                            ; End of macro
 
@@ -52,7 +53,7 @@ Echo_Z80Release macro
 ; Resets the Z80 and YM2612
 ;****************************************************************************
 
-Echo_Z80Reset macro
+macro Echo_Z80Reset
     move.w  #$000, ($A11200)        ; Assert reset line
     rept    $10                     ; Wait until hardware resets
     nop                               ; ...
@@ -77,7 +78,7 @@ Echo_SendCommand:
     beq.s   @ReadySendCommand                  ; Too busy?
     Echo_Z80Release                   ; Let Echo continue
     move.w  #$FF, d1                  ; Give it some time
-    dbf     d1, *                       ; ...
+    dbf     d1, $                       ; ...
     Echo_Z80Request                   ; Get Z80 bus back
     bra.s   @TrySendCommand                      ; Try again
 
@@ -107,7 +108,7 @@ Echo_SendCommandEx:
     beq.s   @ReadySendCommandAddr                  ; Too busy?
     Echo_Z80Release                   ; Let Echo continue
     move.w  #$FF, d1                  ; Give it some time
-    dbf     d1, *                       ; ...
+    dbf     d1, $                       ; ...
     Echo_Z80Request                   ; Get Z80 bus back
     bra.s   @TrySendCommandAddr                      ; Try again
 
@@ -151,7 +152,7 @@ Echo_SendCommandByte:
     beq.s   @ReadySendCommandByte                  ; Too busy?
     Echo_Z80Release                   ; Let Echo continue
     move.w  #$FF, d1                  ; Give it some time
-    dbf     d1, *                       ; ...
+    dbf     d1, $                       ; ...
     Echo_Z80Request                   ; Get Z80 bus back
     bra.s   @TrySendCommandByte                      ; Try again
 
@@ -401,10 +402,10 @@ Echo_GetStatus:
 ; Defines an entry in a pointer list
 ;****************************************************************************
 
-Echo_ListEntry macro addr
-    dc.b    $80|((\1)>>8&$7F)                 ; High byte of address
-    dc.b    (\1)&$FF                          ; Low byte of address
-    dc.b    ((\1)>>15&$7F)|((\1)>>16&$80)   ; Bank number
+macro Echo_ListEntry a
+    dc.b    $80|((a)>>8&$7F)                 ; High byte of address
+    dc.b    (a)&$FF                          ; Low byte of address
+    dc.b    ((a)>>15&$7F)|((a)>>16&$80)   ; Bank number
     endm
 
 ;****************************************************************************
@@ -412,7 +413,7 @@ Echo_ListEntry macro addr
 ; Ends a pointer list
 ;****************************************************************************
 
-Echo_ListEnd macro
+macro Echo_ListEnd
     dc.b    $00                     ; End of list mark
     even                            ; Just in case...
     endm
@@ -482,6 +483,6 @@ Echo_Init:
 ; Echo Z80 program
 ;****************************************************************************
 
-@Z80Program: incbin "./lib/echo/echo_prog-z80.bin"
-@Z80ProgSize equ *-@Z80Program
+@Z80Program: incbin "echo_prog-z80.bin"
+@Z80ProgSize := $-@Z80Program
     even

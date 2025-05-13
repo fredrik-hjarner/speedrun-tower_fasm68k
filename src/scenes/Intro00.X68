@@ -33,55 +33,55 @@
 	dc.w	$000C ; text count
 
 	dc.l	Intro00ObjectiveTitle
-	dc.w	FONT_BASE_TILE_LOW+%0010000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0010000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00020000+$01000000 ; initial drawing location
 
 	dc.l	Intro00Objective0
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00020000+$02000000 ; initial drawing location
 
 	dc.l	Intro00Objective1
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00020000+$03000000 ; initial drawing location
 
 	dc.l	Intro00Objective2
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00020000+$04000000 ; initial drawing location
 
 	dc.l	Intro00Objective3
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00020000+$05000000 ; initial drawing location
 
 	dc.l	Intro00TipsTitle
-	dc.w	FONT_BASE_TILE_LOW+%0010000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0010000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00020000+$06000000 ; initial drawing location
 
 	dc.l	Intro00Tip0
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00020000+$07000000 ; initial drawing location
 
 	dc.l	Intro00Tip1
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00020000+$08000000 ; initial drawing location
 
 	dc.l	Intro00Tip2
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00020000+$09000000 ; initial drawing location
 
 	dc.l	Intro00Tip3
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00020000+$0A000000 ; initial drawing location
 
 	dc.l	Intro00Tip4
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00020000+$0B000000 ; initial drawing location
 
 	dc.l	Intro00Tip5
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00020000+$0C000000 ; initial drawing location
 
 	dc.l	Intro00Tip6
-	dc.w	FONT_BASE_TILE_LOW+%0100000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0100000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00020000+$0D000000 ; initial drawing location
 
 	;---------------------------------------------------------------------------

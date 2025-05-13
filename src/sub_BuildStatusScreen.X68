@@ -29,7 +29,7 @@ BuildStatusScreen:
 	bsr.w	DrawTileset ; branch to DrawTileset subroutine
 	; draw the text label
 	movea.l	(a6),a3 ; a6 is pointing to the text lookup table
-	move.w	#FONT_BASE_TILE_LOW+%0100000000000000,d1 ; font with palette 1
+	move.w	#FONT_BASE_TILE_LOW+0100000000000000b,d1 ; font with palette 1
 .nextchar
 	clr	d7 ; clear out d7
 	move.b	(a3),d7 ; copy current character to d7

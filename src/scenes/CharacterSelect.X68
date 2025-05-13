@@ -181,7 +181,7 @@
 	dc.w	$0000 ; text count
 
 	dc.l	CharacterSelectMenuLine0
-	dc.w	FONT_BASE_TILE_LOW+%0010000000000000 ; vdp pattern
+	dc.w	FONT_BASE_TILE_LOW+0010000000000000b ; vdp pattern
 	dc.l	VDP_VRAM_WRITE_A+$00020000+$00800000 ; initial drawing location
 
 	;---------------------------------------------------------------------------
